@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#ff9a9e">
+    <meta name="description" content="Spesial untuk ulang tahun ke-21 Ditasalsaazzahra.">
+    <meta name="author" content="Your Love">
+    
+    <!-- Open Graph Meta Tags for Link Sharing -->
+    <meta property="og:title" content="Happy 21st Birthday, Ditasalsaazzahra! ❤️">
+    <meta property="og:description" content="Kejutan spesial untuk orang yang paling spesial.">
+    <meta property="og:type" content="website">
+    
+    <title>Spesial Untuk Ditasalsaazzahra ❤️</title>
+    
+    <!-- Preload Assets -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading-state">
+    
+    <!-- AUDIO PLAYER CONTROLS (Hidden by default, for bgm) -->
+    <div id="audio-container" class="audio-controller" aria-hidden="true">
+        <audio id="bg-music" loop preload="auto">
+            <!-- Audio source will be injected via JS if needed -->
+        </audio>
+    </div>
+
+    <!-- BACKGROUND PARALLAX LAYERS -->
+    <div id="parallax-bg" class="background-wrapper">
+        <div class="bg-layer layer-1"></div>
+        <div class="bg-layer layer-2"></div>
+        <div class="bg-layer layer-3"></div>
+        
+        <!-- SVG Overlays for Texture -->
+        <svg class="bg-svg-overlay" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+                <pattern id="pattern-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle fill="rgba(255,255,255,0.1)" cx="2" cy="2" r="1.5"></circle>
+                </pattern>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-dots)"></rect>
+        </svg>
+    </div>
+
+    <!-- PRELOADER / LOADING SCREEN -->
+    <div id="loader-wrapper" class="loader-container">
+        <div class="loader-content">
+            <svg class="heart-loader" viewBox="0 0 32 29.6" width="80" height="80">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" fill="#ff4b6e" />
+            </svg>
+            <div class="loading-text">
+                <span class="letter">M</span>
+                <span class="letter">e</span>
+                <span class="letter">m</span>
+                <span class="letter">u</span>
+                <span class="letter">a</span>
+                <span class="letter">t</span>
+                <span class="letter">.</span>
+                <span class="letter">.</span>
+                <span class="letter">.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN APP CONTAINER -->
+    <main id="app-root" class="main-container">
+
+        <!-- PARTICLE SYSTEM WRAPPERS (Empty divs for CSS/JS particle generation) -->
+        <div id="particles-container" class="particles-layer" aria-hidden="true">
+            <!-- 50 pre-defined particle nodes for hardware accelerated CSS animations -->
+            <div class="particle-node p-1"></div><div class="particle-node p-2"></div>
+            <div class="particle-node p-3"></div><div class="particle-node p-4"></div>
+            <div class="particle-node p-5"></div><div class="particle-node p-6"></div>
+            <div class="particle-node p-7"></div><div class="particle-node p-8"></div>
+            <div class="particle-node p-9"></div><div class="particle-node p-10"></div>
+            <div class="particle-node p-11"></div><div class="particle-node p-12"></div>
+            <div class="particle-node p-13"></div><div class="particle-node p-14"></div>
+            <div class="particle-node p-15"></div><div class="particle-node p-16"></div>
+            <div class="particle-node p-17"></div><div class="particle-node p-18"></div>
+            <div class="particle-node p-19"></div><div class="particle-node p-20"></div>
+            <div class="particle-node p-21"></div><div class="particle-node p-22"></div>
+            <div class="particle-node p-23"></div><div class="particle-node p-24"></div>
+            <div class="particle-node p-25"></div><div class="particle-node p-26"></div>
+            <div class="particle-node p-27"></div><div class="particle-node p-28"></div>
+            <div class="particle-node p-29"></div><div class="particle-node p-30"></div>
+            <div class="particle-node p-31"></div><div class="particle-node p-32"></div>
+            <div class="particle-node p-33"></div><div class="particle-node p-34"></div>
+            <div class="particle-node p-35"></div><div class="particle-node p-36"></div>
+            <div class="particle-node p-37"></div><div class="particle-node p-38"></div>
+            <div class="particle-node p-39"></div><div class="particle-node p-40"></div>
+            <div class="particle-node p-41"></div><div class="particle-node p-42"></div>
+            <div class="particle-node p-43"></div><div class="particle-node p-44"></div>
+            <div class="particle-node p-45"></div><div class="particle-node p-46"></div>
+            <div class="particle-node p-47"></div><div class="particle-node p-48"></div>
+            <div class="particle-node p-49"></div><div class="particle-node p-50"></div>
+        </div>
+
+        <!-- SECTION 1: WELCOME SCREEN (INTERACTIVE) -->
+        <section id="section-welcome" class="glass-panel active-section" aria-label="Halaman Sambutan">
+            <div class="panel-inner">
+                <header class="panel-header">
+                    <div class="sparkle-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h1 class="title-primary typing-effect">Hai, Ditasalsaazzahra! ✨</h1>
+                </header>
+                
+                <article class="panel-body">
+                    <p class="subtitle-text fade-in-up delay-1">
+                        Hari ini tanggal 14 Agustus 2026. Ada sesuatu yang sangat spesial yang udah aku siapin khusus buat kamu.
+                    </p>
+                    <p class="subtitle-text fade-in-up delay-2">
+                        Kamu udah siap buat lihat kejutannya belum?
+                    </p>
+                </article>
+
+                <footer class="panel-footer interactive-area fade-in-up delay-3">
+                    <button id="btn-yes" class="btn btn-primary pulse-anim" aria-label="Terima kejutan">
+                        <span class="btn-text">Mau Banget! 🥰</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button id="btn-no" class="btn btn-secondary evasive-btn" aria-label="Tolak kejutan">
+                        <span class="btn-text">Enggak ah 😜</span>
+                    </button>
+                </footer>
+            </div>
+        </section>
+
+        <!-- SECTION 2: MAIN BIRTHDAY WISHES -->
+        <section id="section-message" class="glass-panel hidden-section" aria-label="Halaman Ucapan Utama">
+            <div class="panel-inner scrollable-content">
+                
+                <!-- Confetti Canvas Overlay -->
+                <canvas id="confetti-canvas" class="confetti-overlay"></canvas>
+
+                <header class="message-header">
+                    <div class="age-badge" data-age="21">
+                        <svg class="crown-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/>
+                        </svg>
+                        <span>21 Tahun</span>
+                    </div>
+                    <h1 class="title-massive gradient-text">Happy Birthday!</h1>
+                    <h2 class="title-secondary">My Dearest, Ditasalsaazzahra</h2>
+                </header>
+
+                <div class="divider-romantic">
+                    <span class="line"></span>
+                    <svg class="heart-spin" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" fill="#ff4b6e" />
+                    </svg>
+                    <span class="line"></span>
+                </div>
+
+                <article class="message-body">
+                    <div class="message-card highlight-box">
+                        <p class="paragraph">
+                            Barakallahu fi umrik, sayang. Tepat di hari ini, 14 Agustus 2026, usiamu genap <strong>21 tahun</strong>. Angka yang melambangkan kedewasaan, harapan baru, dan perjalanan yang semakin indah.
+                        </p>
+                    </div>
+                    
+                    <div class="message-card">
+                        <p class="paragraph">
+                            Di usiamu yang ke-21 ini, doaku selalu menyertaimu. Semoga Allah SWT selalu melimpahkan kesehatan, kebahagiaan yang tak pernah putus, rezeki yang berkah, dan kemudahan dalam setiap langkahmu menggapai cita-cita.
+                        </p>
+                    </div>
+
+                    <div class="message-card">
+                        <p class="paragraph">
+                            Terima kasih ya, sudah bertahan sejauh ini. Terima kasih sudah lahir ke dunia, dan terima kasih sudah menjadi bagian paling berharga dalam hidupku. Kamu adalah alasan di balik banyak senyumanku akhir-akhir ini.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- SECTION 3: 21 REASONS WHY I LOVE YOU (Accordion / List) -->
+                <div class="reasons-container mt-40">
+                    <h3 class="title-tertiary text-center">21 Hal Yang Aku Suka Dari Kamu 💖</h3>
+                    
+                    <ul class="reasons-list">
+                        <!-- 1-7 -->
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">01</div>
+                            <div class="reason-text">Senyummu yang selalu bisa mengubah hariku yang buruk jadi lebih baik.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">02</div>
+                            <div class="reason-text">Cara kamu menatapku yang bikin aku selalu merasa dihargai.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">03</div>
+                            <div class="reason-text">Tawamu yang renyah dan nular banget.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">04</div>
+                            <div class="reason-text">Sifat pekerjakeras dan pantang menyerah kamu.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">05</div>
+                            <div class="reason-text">Kesabaranmu saat menghadapi sikapku yang kadang nyebelin.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">06</div>
+                            <div class="reason-text">Cara bicaramu yang lembut dan menenangkan.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">07</div>
+                            <div class="reason-text">Perhatian-perhatian kecil yang selalu kamu kasih tanpa aku minta.</div>
+                        </li>
+                        
+                        <!-- 8-14 -->
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">08</div>
+                            <div class="reason-text">Selera humormu yang selalu sefrekuensi sama aku.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">09</div>
+                            <div class="reason-text">Bagaimana kamu selalu mensupport setiap mimpi dan keputusanku.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">10</div>
+                            <div class="reason-text">Kedewasaanmu dalam menyelesaikan masalah kita walaupun ngga sih.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">11</div>
+                            <div class="reason-text">Gimana lucunya kamu saat lagi ngambek atau cemburu.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">12</div>
+                            <div class="reason-text">Suara kamu, terutama saat kamu manggil namaku.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">13</div>
+                            <div class="reason-text">Sifat penyayang kamu ke orang-orang di sekitarmu.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">14</div>
+                            <div class="reason-text">Gimana kamu selalu berusaha jadi versi terbaik dari dirimu.</div>
+                        </li>
+
+                        <!-- 15-21 -->
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">15</div>
+                            <div class="reason-text">Mata kamu yang indah, tempat aku bisa melihat masa depanku.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">16</div>
+                            <div class="reason-text">Keberanianmu dalam mencoba hal-hal baru.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">17</div>
+                            <div class="reason-text">Cara kamu mendengarkan ceritaku dengan penuh antusias.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">18</div>
+                            <div class="reason-text">Tutur katamu yang selalu bikin aku merasa aman.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">19</div>
+                            <div class="reason-text">Ketulusan hatimu dalam mencintai aku apa adanya.</div>
+                        </li>
+                        <li class="reason-item card-3d">
+                            <div class="reason-number">20</div>
+                            <div class="reason-text">Fakta bahwa kamu adalah Ditasalsaazzahra, satu-satunya di dunia.</div>
+                        </li>
+                        <li class="reason-item card-3d highlight-reason">
+                            <div class="reason-number">21</div>
+                            <div class="reason-text">Dan alasan ke-21... karena cinta nggak butuh alasan. I just love you.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- VIRTUAL CAKE SECTION -->
+                <div class="cake-container mt-40">
+                    <h3 class="title-tertiary text-center">Tiup Lilinnya Sayang! 🎂</h3>
+                    <p class="text-center micro-text">(Sentuh lilinnya untuk meniup)</p>
+                    
+                    <div class="virtual-cake">
+                        <div class="candle-wrapper" id="candle-trigger">
+                            <div class="flame"></div>
+                            <div class="candle">
+                                <div class="stripe"></div>
+                                <div class="stripe"></div>
+                                <div class="stripe"></div>
+                                <div class="stripe"></div>
+                                <div class="stripe"></div>
+                            </div>
+                        </div>
+                        <div class="cake-tier top-tier">
+                            <div class="frosting frosting-1"></div>
+                            <div class="frosting frosting-2"></div>
+                            <div class="frosting frosting-3"></div>
+                            <div class="frosting frosting-4"></div>
+                            <div class="frosting frosting-5"></div>
+                            <div class="frosting frosting-6"></div>
+                            <div class="frosting frosting-7"></div>
+                        </div>
+                        <div class="cake-tier bottom-tier">
+                            <div class="drip drip-1"></div>
+                            <div class="drip drip-2"></div>
+                            <div class="drip drip-3"></div>
+                            <div class="drip drip-4"></div>
+                            <div class="drip drip-5"></div>
+                            <div class="drip drip-6"></div>
+                        </div>
+                        <div class="cake-plate"></div>
+                    </div>
+                </div>
+
+                <!-- FINAL CLOSING WISH -->
+                <footer class="message-footer mt-40 text-center">
+                    <p class="closing-text">Selamat ulang tahun yang ke-21, Ditasalsaazzahra.</p>
+                    <p class="closing-text font-bold mt-10">I Love You to the moon and never back. 💖</p>
+                    
+                    <div class="signature-box mt-20">
+                        <button id="btn-replay" class="btn-ghost">
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                            </svg>
+                            Ulangi Kejutan
+                        </button>
+                    </div>
+                </footer>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SVG FILTERS (Hidden, for complex CSS effects) -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+            
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+
+
+    <script src="script.js"></script> 
+
+</body>
+</html>
